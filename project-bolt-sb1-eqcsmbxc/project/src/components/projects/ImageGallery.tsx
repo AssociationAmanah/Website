@@ -31,7 +31,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images }) => {
 
   return (
     <div>
-      {/* Image Grid */}
+      {/* Image & Video Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {images.map((image, index) => (
           <motion.div
@@ -43,11 +43,21 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images }) => {
             onClick={() => openLightbox(index)}
             whileHover={{ scale: 1.03 }}
           >
-            <img 
-              src={image} 
-              alt={`Gallery image ${index + 1}`} 
-              className="w-full h-full object-cover"
-            />
+            {image.endsWith('.mp4') ? (
+              <video
+                src={image}
+                muted
+                autoPlay
+                loop
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <img 
+                src={image} 
+                alt={`Gallery image ${index + 1}`} 
+                className="w-full h-full object-cover"
+              />
+            )}
             <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300"></div>
           </motion.div>
         ))}
@@ -100,11 +110,19 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images }) => {
               className="relative w-11/12 h-5/6 flex items-center justify-center"
               onClick={(e) => e.stopPropagation()}
             >
-              <img 
-                src={images[selectedImageIndex]} 
-                alt={`Gallery fullsize ${selectedImageIndex + 1}`}
-                className="max-w-full max-h-full object-contain"
-              />
+              {images[selectedImageIndex].endsWith('.mp4') ? (
+                <video
+                  src={images[selectedImageIndex]}
+                  controls
+                  className="max-w-full max-h-full object-contain"
+                />
+              ) : (
+                <img 
+                  src={images[selectedImageIndex]} 
+                  alt={`Gallery fullsize ${selectedImageIndex + 1}`}
+                  className="max-w-full max-h-full object-contain"
+                />
+              )}
             </motion.div>
             
             <div className="absolute bottom-4 text-white text-sm">
