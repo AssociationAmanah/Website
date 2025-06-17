@@ -9,7 +9,7 @@ const DonationPage: React.FC = () => {
     {
       amount: 20,
       title: 'Donateur',
-      description: 'Votre don peut fournir des fournitures scolaires à un enfant pendant un an.',
+      description: 'Votre don peut fournir des fournitures scolaires à un enfant pendant un an!',
       icon: <Gift className="w-6 h-6 text-white" />
     },
     {
