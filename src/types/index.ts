@@ -7,7 +7,6 @@ export interface Project {
   image: string;
   gallery: string[];
   date: string;
-  impact: string;
 }
 
 export interface NavItem {

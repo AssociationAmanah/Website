@@ -8,6 +8,7 @@ import ProjectDetailPage from './pages/ProjectDetailPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './components/common/ContactPage';
 import ScrollToTop from './components/common/ScrollToTop';
+import NosEvenements from './pages/NosEvenements';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/projets/:id" element={<ProjectDetailPage />} />
             <Route path="/a-propos" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/evenements" element={<NosEvenements/>} />
           </Routes>
         </main>
         <Footer />

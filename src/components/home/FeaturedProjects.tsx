@@ -102,14 +102,14 @@ const FeaturedProjects: React.FC = () => {
           <button
             onClick={handlePrev}
             aria-label="Projet précédent"
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-[#D4AF37] p-3 rounded-full shadow-lg hover:bg-[#FAE1A2] transition-all"
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#2e8b57] text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition-all"
           >
             <ChevronLeft size={24} />
           </button>
           <button
             onClick={handleNext}
             aria-label="Projet suivant"
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-[#D4AF37] p-3 rounded-full shadow-lg hover:bg-[#FAE1A2] transition-all"
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#2e8b57] text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition-all"
           >
             <ChevronRight size={24} />
           </button>

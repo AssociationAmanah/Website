@@ -37,7 +37,7 @@ Le forage n’est pas seulement une source d’eau, mais également un vecteur d
     location: 'Guinée',
     image: `${import.meta.env.BASE_URL}images/guinee2.jpg`,
     gallery: [
-      `${import.meta.env.BASE_URL}images/guinee1.jpg`,
+      
   `${import.meta.env.BASE_URL}images/guinee2.jpg`,
   `${import.meta.env.BASE_URL}images/guinee3.jpg`,
   `${import.meta.env.BASE_URL}images/guinee4.jpg`,
@@ -46,7 +46,6 @@ Le forage n’est pas seulement une source d’eau, mais également un vecteur d
 
     ],
     date: '2021 / 2022',
-    impact: 'Plus de 2000 personnes ont désormais accès à l\'eau potable.'
   },
   {
     id: '2',
@@ -90,9 +89,8 @@ Ce voyage solidaire a été un véritable défi, mais aussi une expérience inou
       `${import.meta.env.BASE_URL}images/orphe8.JPG`,
       `${import.meta.env.BASE_URL}videos/orphe10.mp4`,
     ],
-    date: 'Septembre 2022',
-    impact: ''
-  },
+  date: 'Septembre 2022'
+},
   {
     id: '3',
     title: 'Maraude',
@@ -116,13 +114,11 @@ Ce vendredi-là, nous avons eu l’opportunité de rencontrer un homme particuli
     location: 'Nancy, Metz, Paris, Reims & Nîmes',
     image:`${import.meta.env.BASE_URL}images/Maraude.jpg`,
     gallery: [ 
-      `${import.meta.env.BASE_URL}images/marode2.jpg`,
       `${import.meta.env.BASE_URL}images/marode3.jpg`,
-      `${import.meta.env.BASE_URL}images/marode4.jpg`,
+      `${import.meta.env.BASE_URL}images/marode2.jpg`,
       `${import.meta.env.BASE_URL}videos/marode1.mp4`,
     ],
-    date: 'Vendredi 21 décembre 2022',
-    impact: '',
+    date: 'Chaque année',
   },
   {
     id: '4',
@@ -187,15 +183,15 @@ restaurateur partenaire ou donateur. Ensemble, faisons en sorte que personne ne 
 pendant le mois du partage.
     `,
     location: 'Nancy, Metz, Paris, Reims & Nîmes',
-    image:`${import.meta.env.BASE_URL}images/pack.jpg`,
+    image:`${import.meta.env.BASE_URL}images/ramadan4.jpg`,
     gallery: [ 
-      `${import.meta.env.BASE_URL}images/marode2.jpg`,
-      `${import.meta.env.BASE_URL}images/marode3.jpg`,
-      `${import.meta.env.BASE_URL}images/marode4.jpg`,
-      `${import.meta.env.BASE_URL}videos/marode1.mp4`,
+      `${import.meta.env.BASE_URL}images/ramadan2.PNG`,
+      `${import.meta.env.BASE_URL}images/ramadan4.jpg`,
+      `${import.meta.env.BASE_URL}images/ramadan1.PNG`,
+      `${import.meta.env.BASE_URL}videos/ramadan3.mp4`,
+      `${import.meta.env.BASE_URL}videos/ramadan5.mp4`,
     ],
-    date: 'Vendredi 21 décembre 2022',
-    impact: '',
+    date: 'Chaque année',
   },
    {
     id: '5',
@@ -251,15 +247,14 @@ construisons un avenir plus juste, où chacun a accès aux besoins les plus esse
 Merci de faire partie de cette belle aventure humaine et solidaire.
     `,
     location: 'Conakry – Quartier Wanindara',
-    image:`${import.meta.env.BASE_URL}images/Maraude.jpg`,
+    image:`${import.meta.env.BASE_URL}images/guineee1.jpg`,
     gallery: [ 
-      `${import.meta.env.BASE_URL}images/marode2.jpg`,
-      `${import.meta.env.BASE_URL}images/marode3.jpg`,
-      `${import.meta.env.BASE_URL}images/marode4.jpg`,
-      `${import.meta.env.BASE_URL}videos/marode1.mp4`,
+      `${import.meta.env.BASE_URL}images/guineee1.jpg`,
+      `${import.meta.env.BASE_URL}images/guineee2.jpg`,
+      `${import.meta.env.BASE_URL}videos/guineee3.mp4`,
+      `${import.meta.env.BASE_URL}videos/guineee15.mp4`,
     ],
-    date: 'Vendredi 21 décembre 2022',
-    impact: '',
+    date: '2023',
   },
 {
     id: '6',
@@ -331,17 +326,97 @@ Cette action ne pourrait exister sans l’engagement de :
 ceux qui en ont le plus besoin.
     `,
     location: 'Nîmes',
-    image:`${import.meta.env.BASE_URL}images/Maraude.jpg`,
+    image:`${import.meta.env.BASE_URL}images/marode4.jpg`,
     gallery: [ 
-      `${import.meta.env.BASE_URL}images/marode2.jpg`,
-      `${import.meta.env.BASE_URL}images/marode3.jpg`,
       `${import.meta.env.BASE_URL}images/marode4.jpg`,
-      `${import.meta.env.BASE_URL}videos/marode1.mp4`,
+      `${import.meta.env.BASE_URL}videos/nimes1.mp4`,
+      `${import.meta.env.BASE_URL}videos/nimes2.mp4`,
     ],
-    date: 'Vendredi 21 décembre 2022',
-    impact: '',
+    date: '2023-2024',
   },
-  
+  {
+    id: '7',
+    title: 'Construction d’une mosquée en Guinée - Touba',
+    summary: 'Projet de Construction d’une Mosquée et de Soutien à l’Éducation – Touba, Guinée',
+    description: `
+   Depuis sa création, notre association place la solidarité, l’éducation et la spiritualité au cœur
+de ses engagements. C’est dans cette dynamique que nous avons mené, en partenariat
+avec l’association Al Barakat, un projet majeur : la construction d’une mosquée dans la ville
+de Touba, en Guinée, accompagnée d’un programme de soutien à l’éducation des enfants.
+
+🕌 Une mosquée, lieu de culte et de vie communautaire
+
+Touba, localité située en Guinée, avait un besoin criant d’un lieu de culte structurant pour sa
+population. Ensemble avec l’association Al Barakat, ancrée dans la région et proche des
+réalités du terrain, nous avons décidé d’apporter notre soutien à la construction d’une
+mosquée adaptée aux besoins de la communauté locale.
+
+Ce lieu n’est pas seulement un espace de prière. C’est aussi :
+
+• Un lieu de rassemblement pour les fidèles,
+
+• Un centre de transmission des valeurs spirituelles et morales,
+
+• Un espace de renforcement du lien social entre les habitants.
+
+Cette mosquée est aujourd’hui un pilier pour les habitants de Touba, un lieu ouvert à tous,
+symbole d’unité et de paix.
+
+📚 L’éducation au cœur de notre action
+
+Au-delà de l’aspect spirituel, nous avons également tenu à accompagner la communauté
+dans un domaine essentiel pour l’avenir : l’éducation des enfants.
+
+Dans le cadre de ce projet, nous soutenons :
+
+• L’accès à une éducation de base pour les plus jeunes,
+
+• La mise en place d’espaces d’apprentissage proches de la mosquée,
+
+• Le renforcement de l’encadrement pédagogique par des enseignants locaux,
+
+• Et des initiatives éducatives adaptées au contexte culturel et religieux.
+
+
+Car nous croyons fermement qu’éduquer un enfant, c’est bâtir l’avenir d’une communauté.
+
+🤝 Un partenariat local pour un impact durable
+
+La réussite de ce projet repose en grande partie sur la collaboration étroite avec
+l’association Al Barakat, qui agit au plus près des besoins des habitants de Touba. Grâce à
+ce partenariat de confiance, nous avons pu assurer :
+
+• Une utilisation efficace des fonds,
+
+• Un suivi régulier des travaux,
+
+• Et une implication active de la population locale, garante de l’appropriation du projet.
+
+🌍 Un engagement qui dépasse la construction
+
+Ce projet dépasse la seule dimension matérielle. Il incarne un engagement profond envers
+le développement local, la transmission du savoir, et la préservation des valeurs spirituelles.
+Nous sommes fiers de contribuer, à notre échelle, à l’élévation des consciences, à la
+stabilité sociale, et à l’émancipation par la foi et le savoir.
+
+🙏 Merci à nos donateurs et partenaires
+
+Ce projet n’aurait jamais pu voir le jour sans le soutien de nos donateurs, qui ont cru en
+cette vision, ni sans la mobilisation des bénévoles et l’implication indéfectible de notre
+partenaire Al Barakat.
+Chaque contribution a permis de transformer une idée en réalité, et de semer une graine
+d’espoir dans le cœur de toute une communauté.
+
+    `,
+    location: 'Guinée - Touba',
+    image:`${import.meta.env.BASE_URL}images/guinee1.jpg`,
+    gallery: [ 
+      `${import.meta.env.BASE_URL}images/guinee1.jpg`,
+      `${import.meta.env.BASE_URL}videos/`,
+      `${import.meta.env.BASE_URL}videos/`,
+    ],
+    date: '2024',
+  },
 ];
 
 {/*

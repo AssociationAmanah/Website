@@ -21,7 +21,7 @@ const DonationCTA: React.FC = () => {
             className="transition-transform transform hover:scale-105"
           >
             <Button
-              variant="greenOutline"
+              variant="whiteOutline"
               size="lg"
               className="px-10 py-4 text-lg font-bold shadow-lg"
             >

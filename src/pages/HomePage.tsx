@@ -21,7 +21,7 @@ const HomePage: React.FC = () => {
       />
 
       {/* À propos */}
-      <section className="py-16 bg-white">
+      <section className="pt-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-6 sm:px-8">
           <motion.h2
             variants={sectionTitleVariant}

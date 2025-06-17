@@ -7,7 +7,7 @@ const greenDark = '#2e8b57'; // vert foncé utilisé partout
 
 const ProjectGrid: React.FC = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="pt-28 pb-16 bg-white">
       <div className="container mx-auto px-4">
         {/* Titre et description */}
         <div className="text-center mb-12">
@@ -15,7 +15,7 @@ const ProjectGrid: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-3xl font-display font-bold mb-4"
+            className="text-3xl font-display font-bold mb-10"
             style={{ color: greenDark }}
           >
             Découvrez Nos Projets

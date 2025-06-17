@@ -46,66 +46,71 @@ const AboutSection: React.FC = () => {
 
   return (
     <section className="py-12 bg-white min-h-[80vh]">
-      <div className="max-w-[1200px] mx-auto px-8">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-3xl font-display font-bold text-gray-900 mb-6">
-              À propos de l'Association
-            </h2>
-            <p className="text-gray-700 mb-5 text-base leading-relaxed">
-              Créée en 2020 par un groupe d’étudiants nancéens, l'Association Amanah œuvre pour un monde plus solidaire et juste. 
-              Depuis sa fondation, l'association s'est consacrée à des projets humanitaires essentiels, 
-              notamment en Guinée et Maroc, avec la construction de forages pour fournir un accès à l'eau potable aux communautés locales.
-            </p>
-            <p className="text-gray-700 mb-6 text-base leading-relaxed">
-              Portée par des valeurs de solidarité, de responsabilité et de compassion, Amanah s'engage à agir de manière transparente et 
-              respectueuse des populations aidées. Grâce à l’implication de ses bénévoles et donateurs, l'association poursuit son développement,
-              apportant des solutions durables et semant des graines d’espoir pour un futur meilleur.
-            </p>
-            <Link to="/a-propos">
-              <Button variant="greenOutline">En savoir plus</Button>
-            </Link>
-          </motion.div>
+  <div className="max-w-[1200px] mx-auto px-8">
+    <div className="grid md:grid-cols-2 gap-12 items-start"> {/* <-- items-start pour alignement haut */}
+      
+      {/* Colonne gauche (texte) */}
+      <motion.div
+        initial={{ opacity: 0, x: -30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="mt-5" // <-- Ajuste finement la hauteur pour alignement horizontal
+      >
+        <h2 className="text-3xl font-display font-bold text-gray-900 mb-8">
+          À propos de l'Association
+        </h2>
+        <p className="text-gray-700 mb-4 text-base leading-relaxed">
+          Créée en 2020 par un groupe d’étudiants nancéens, l'Association Amanah œuvre pour un monde plus solidaire et juste. 
+          Depuis sa fondation, l'association s'est consacrée à des projets humanitaires essentiels, 
+          notamment en Guinée et Maroc, avec la construction de forages pour fournir un accès à l'eau potable aux communautés locales.
+        </p>
+        <p className="text-gray-700 mb-6 text-base leading-relaxed">
+          Portée par des valeurs de solidarité, de responsabilité et de compassion, Amanah s'engage à agir de manière transparente et 
+          respectueuse des populations aidées. Grâce à l’implication de ses bénévoles et donateurs, l'association poursuit son développement,
+          apportant des solutions durables et semant des graines d’espoir pour un futur meilleur.
+        </p>
+        <Link to="/a-propos">
+          <Button variant="greenOutline">En savoir plus</Button>
+        </Link>
+      </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="grid grid-cols-1 sm:grid-cols-2 gap-6"
-          >
-            {values.map((value, index) => (
-              <Link key={index} to={value.link} className="group">
+      {/* Colonne droite (valeurs) */}
+      <motion.div
+        initial={{ opacity: 0, x: 30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+      >
+        {values.map((value, index) => (
+          <Link key={index} to={value.link} className="group">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="p-6 bg-[#F8F9F5] rounded-xl shadow-md hover:shadow-xl transition-shadow transform hover:scale-105 cursor-pointer"
+            >
+              <div className="flex items-center gap-4 mb-3">
                 <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="p-6 bg-[#F8F9F5] rounded-xl shadow-md hover:shadow-xl transition-shadow transform hover:scale-105 cursor-pointer"
+                  whileHover={{ scale: 1.2 }}
+                  transition={{ duration: 0.3 }}
+                  className="text-[#2e8b57]"
                 >
-                  <div className="flex items-center gap-4 mb-3">
-                    <motion.div
-                      whileHover={{ scale: 1.2 }}
-                      transition={{ duration: 0.3 }}
-                      className="text-[#2e8b57]"
-                    >
-                      {value.icon}
-                    </motion.div>
-                    <h3 className="text-lg font-semibold text-[#2e8b57]">{value.title}</h3>
-                  </div>
-                  <p className="text-sm text-gray-700 leading-snug">{value.description}</p>
+                  {value.icon}
                 </motion.div>
-              </Link>
-            ))}
-          </motion.div>
-        </div>
-      </div>
-    </section>
+                <h3 className="text-lg font-semibold text-[#2e8b57]">{value.title}</h3>
+              </div>
+              <p className="text-sm text-gray-700 leading-snug">{value.description}</p>
+            </motion.div>
+          </Link>
+        ))}
+      </motion.div>
+    </div>
+  </div>
+</section>
+
   );
 };
 

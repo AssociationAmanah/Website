@@ -8,7 +8,7 @@ const ProjectsPage: React.FC = () => {
       <Hero 
         title="Nos Projets"
         subtitle="Découvrez nos initiatives humanitaires"
-        backgroundImage={`${import.meta.env.BASE_URL}images/pageprojet.png`}
+        backgroundColor="#2e8b57"
       />
       <ProjectGrid />
     </div>

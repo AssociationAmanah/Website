@@ -23,7 +23,7 @@ const Hero: React.FC<HeroProps> = ({
         backgroundPosition: 'center',
       }
     : {
-        backgroundImage: `linear-gradient(to bottom,rgb(38, 44, 41),rgb(96, 223, 164))`, 
+        backgroundImage: `linear-gradient(135deg, rgb(115, 202, 159), rgb(15, 94, 57))`, 
       };
 
   return (

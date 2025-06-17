@@ -10,7 +10,7 @@ const AboutPage: React.FC = () => {
       <Hero 
         title="À Propos de Nous"
         subtitle="Découvrez notre histoire, notre mission et nos valeurs"
-        backgroundImage={`${import.meta.env.BASE_URL}images/pageabout.png`}
+        backgroundColor="#2e8b57"
       />
 
       {/* Carrousel interactif Histoire / Mission / Valeurs */}

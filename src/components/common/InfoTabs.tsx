@@ -92,9 +92,9 @@ const InfoTabs: React.FC = () => {
                   onClick={() => setActiveTab(key)}
                   whileHover={{ scale: 1.03 }}
                   className={`flex items-center justify-center gap-2 flex-1 px-4 py-2 rounded-full text-lg transition-all duration-300 ${
-                    isActive
-                      ? 'bg-gradient-to-r from-[#d4af37] to-[#f0d875] text-white font-bold shadow-md border-2 border-[#d4af37]'
-                      : 'bg-white text-[#2e8b57] border border-[#2e8b57]'
+                   isActive
+                    ? 'bg-[#2e8b57] text-white font-bold shadow-md border-2 border-[#2e8b57]'
+                    : 'bg-white text-[#2e8b57] border border-[#2e8b57]'
                   }`}
                 >
                   <motion.span

@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:text-yellow-400 transform transition-all hover:scale-110 duration-300"
+                  className="text-white hover:text-[#2e8b57] transform transition-all hover:scale-110 duration-300"
                   aria-label={link.platform}
                 >
                   {link.icon === 'facebook' ? (
@@ -55,6 +55,11 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>          
+      <Link to="/evenements" className="text-gray-300 hover:text-white transition-colors">
+        Nos Événements
+      </Link>
+    </li>
+              <li>          
                 <Link to="/02/contact" className="text-gray-300 hover:text-white transition-colors">
                   Nous Contacter
                 </Link>
@@ -67,17 +72,17 @@ const Footer: React.FC = () => {
             <h3 className="font-display font-bold text-xl mb-4">Contact</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
-                <MapPin size={18} className="mr-2 mt-1 flex-shrink-0 text-yellow-400" />
+                <MapPin size={18} className="mr-2 mt-1 flex-shrink-0 text-[#2e8b57]" />
                 <span className="text-gray-300">
                   19 rue du Docteur Louis Michel, 54000 Nancy
                 </span>
               </li>
               <li className="flex items-center">
-                <Phone size={18} className="mr-2 flex-shrink-0 text-yellow-400" />
+                <Phone size={18} className="mr-2 flex-shrink-0 text-[#2e8b57]" />
                 <span className="text-gray-300">+33 6 18 37 53 73</span>
               </li>
               <li className="flex items-center">
-                <Mail size={18} className="mr-2 flex-shrink-0 text-yellow-400" />
+                <Mail size={18} className="mr-2 flex-shrink-0 text-[#2e8b57]" />
                 <a href="mailto:contact@association-amanah.org" className="text-gray-300 hover:text-white transition-colors break-all">
                   associationamanah.contact@gmail.com
                 </a>
@@ -94,7 +99,7 @@ const Footer: React.FC = () => {
           </p>
           <div className="flex items-center text-gray-400 text-sm justify-center sm:justify-start">
             <span>Créé avec</span>
-            <Heart size={14} className="mx-1 text-yellow-400" />
+            <Heart size={14} className="mx-1 text-[#ff0000]" />
             <span>pour un monde meilleur</span>
           </div>
         </div>
